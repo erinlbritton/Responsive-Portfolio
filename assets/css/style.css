@@ -506,12 +506,12 @@ input[type=button], input[type=submit], input[type=reset] {
     
     /* spaces out links around pipes */
     .link-text {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     #link-contact {
-        padding-right: 10%;
+        padding-right: 5%;
     }
 
     .portfolio-img-left {
