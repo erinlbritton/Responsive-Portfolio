@@ -1,0 +1,546 @@
+/* This container should span the width of the page, contain centered header elements, 
+have a white background, and fixed position so it doesn't scroll.  */
+.container-header {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    border-bottom-color: #cccccc;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+/* sets and centers the content display width of 960px */
+.header {
+    background-color: #ffffff;
+    margin: 0px auto;
+    width: 960px;
+    display: table;
+}
+
+/* tag for my name; floats left */
+.name-header {
+    background-color: #4aaaa5;
+    color: white;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+    margin: 0;
+}
+
+/* navigation links; floats right */
+.link-header {
+    color: #cccccc;
+    background-color: #ffffff;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding-top: 38px;
+    padding-bottom: 36px;
+    float: right;
+}
+
+/* spaces out links around pipes */
+.link-text {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#link-contact {
+    padding-right: 0px;
+}
+
+/* sets link color and removes underline */
+a:link {
+    text-decoration: none;
+    color: #777777;
+}
+
+/* sets link color and removes underline */
+a:visited {
+    text-decoration: none;
+    color: #777777;
+}
+
+/* adds underline on mouse hover */
+a:hover {
+    text-decoration: underline;
+    color: #777777;
+}
+
+/* active must come after hover to be effective */
+a:active {
+    text-decoration: underline;
+    color: #777777;
+}
+/* clears float between sections */
+.clear-float {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+/* sets background image (from https://www.toptal.com/designers/subtlepatterns/) */
+.background {
+    background: url('../images/topography.png');
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+ }
+
+/* This contains the main page contents to the same width as the header and allows
+the main and sidebar sections to float appropriately */
+.container-body {
+    margin-top: 93px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 960px;
+    display: table;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    z-index: 1;
+    min-height: calc(100vh - 234px); /*100% - (height of footer + height of header) */
+}
+
+/* contains the header for the main page content (left panel) */
+.main-header {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* line separating the main-header and main content */
+.hr-main {
+    border-top: 2px;
+    border-style: solid;
+    border-color: #cccccc;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;    
+}
+
+/* contains the main page content (left panel) */
+.main {
+    background: #ffffff;
+    margin-top: 30px;
+    display: table-cell;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    width: 580px;
+    padding: 35px;
+    line-height: 200%;
+    color: #777777;
+    float: left;
+}
+
+/* main image for the main section */
+.main-img {
+    float:left;
+    width: 200px;
+    height: 200px;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+/* sets spacing and location of left-side portfolio images */
+.portfolio-img-left {
+    float:left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* sets spacing and location of the right-side portfolio images */
+.portfolio-img-right {
+    float:right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* creates the label over the portfolio images */
+.portfolio-img-label {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    background: #4aaaa5;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* changes the color of the labels over the portfolio images */
+.portfolio-img-label:hover {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    background: #377F7C;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* sidebar content on the right of the main section */
+.sidebar {
+    background: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    width: 210px;
+    margin-top: 30px;
+    padding: 30px;
+    float: right;
+}
+
+/* header for the sidebar section */
+.sidebar-header {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* line separating the sidebar header and content */
+.hr-sidebar {
+    border-top: 1px;
+    border-style: solid;
+    border-color: #cccccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;    
+}
+
+/* sets size and placement of github icon (from https://www.iconfinder.com/) */
+.icon {
+    height: 70px;
+    width: 70px;
+    float: left;
+}
+
+/* sets size and placement of linkedin icon */
+.icon2 {
+    height: 70px;
+    width: 70px;
+    margin-left: 2px;
+    margin-right: 2px;
+    float: left;
+}
+
+/* adjusts the size and placement of the stackoverflow icon because it does not have a border
+unlike the other two icons */
+.icon3 {
+    height: 63px;
+    width: 63px;
+    margin-top: 4px;
+    float: right;
+}
+
+/* contains the footer content */
+.container-footer {
+    background-color: #666666;
+    margin: 0 auto;
+    width: 100%;
+    display: table;
+    border-top: 8px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: #4aaaa5;
+    padding: 0;
+    height: 96px;
+}
+
+/* defines the footer copyright text */
+.footer-text {
+    color: #cccccc;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 12px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0;
+    padding: 42px;
+}
+
+/* defines the "name" box on the contact form */
+input[name=textbox1] {
+    width: calc(100% - 25px);
+    padding: 10px;
+    margin-bottom: 15px;
+    color: grey;
+    border: 1px;
+    border-style: solid;
+    border-color: #cccccc;
+}
+
+/* defines the free-text field on the contact form */
+textarea[name=textbox2] {
+    width: calc(100% - 25px);
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: grey;
+    border: 1px;
+    border-style: solid;
+    border-color: #cccccc;
+}
+
+/* defines the submit icon on the contact form */
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+/* **************************************************************************************************************** */
+/* **************************************************************************************************************** */
+/* **************************************************************************************************************** */
+
+
+/* Media Queries below added for Homework 2 Assignment 2; screen size cut points: 980px, 768px, 640px*/
+@media screen and (max-width: 980px) and (min-width: 769px) {
+    .main-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    
+    .header {
+        width: 70%;
+    }
+
+    .container-body {
+        width: 70%;
+    }
+
+    .main {
+        width: 45%;
+    }
+
+    .sidebar {
+        width: 30%;
+    }
+
+        /* sets size and placement of github icon (from https://www.iconfinder.com/) */
+    .icon {
+        height: auto;
+        width: 33%;
+    }
+
+    /* sets size and placement of linkedin icon */
+    .icon2 {
+        height: auto;
+        width: 33%;
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+
+    /* adjusts the size and placement of the stackoverflow icon because it does not have a border
+    unlike the other two icons */
+    .icon3 {
+        height: auto;
+        width: 29.5%;
+        float: left;
+    }
+
+    .portfolio-img-left {
+        float: left;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    
+    /* sets spacing and location of the right-side portfolio images */
+    .portfolio-img-right {
+        float: left;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    
+    /* creates the label over the portfolio images */
+    .portfolio-img-label {
+        width: 100%;
+        bottom: 10%;
+    }
+
+    .portfolio-img-label:hover {
+        width: 100%;
+        bottom: 10%;
+    }
+    
+}
+
+/* **************************************************************************************************************** */
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+    .main-img {
+        width: 50%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .header {
+        width: 90%;
+    }
+
+    .container-body {
+        width: 90%;
+    }
+
+    .main {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 30px;    
+    }
+
+    .sidebar {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        float: left;
+
+    }   
+
+    .icon2 {
+        margin-right: 5px;
+    }
+
+    .icon3 {
+        float: left;
+    }
+}
+
+/* **************************************************************************************************************** */
+
+@media screen and (max-width: 640px) and (min-width: 0px) {
+    .main-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .container-header {
+        position: static;
+    }
+    
+    .header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-body {
+        width: 90%;
+        margin-top: 0px;
+    }
+
+    .main {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 30px;    
+    }
+
+    .sidebar {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        float: left;
+
+    }
+    
+    .icon2 {
+        margin-right: 5px;
+    }
+
+    .icon3 {
+        float: left;
+    }
+
+    .name-header {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        vertical-align: middle;
+    }
+    
+    /* navigation links; floats right */
+    .link-header {
+        padding-top: 110px;
+        padding-bottom: 20px;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        float: none;
+    }
+    
+    /* spaces out links around pipes */
+    .link-text {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #link-contact {
+        padding-right: 10%;
+    }
+
+    .portfolio-img-left {
+        float: left;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    
+    /* sets spacing and location of the right-side portfolio images */
+    .portfolio-img-right {
+        float: left;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    
+    /* creates the label over the portfolio images */
+    .portfolio-img-label {
+        width: 100%;
+        bottom: 10%;
+    }
+
+    .portfolio-img-label:hover {
+        width: 100%;
+        bottom: 10%;
+    }
+}
